@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               OpenTok-API
-version:            0.01
+version:            0.02
 abstract:           Perl SDK for OpenTok
 author:
     - Maxim Nikolenko <root@zbsd.ru>

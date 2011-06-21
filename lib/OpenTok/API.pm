@@ -21,11 +21,11 @@ http://www.tokbox.com/
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our $API_VERSION = 'tbpl-v0.01.2011-06-15';
 our %API_SERVER = ( "development" => "https://staging.tokbox.com/hl",
                     "production" => "https://api.opentok.com/hl");
@@ -259,7 +259,7 @@ sub _do_request {
 
 sub _urlencode {
     my ($self, $data) = @_;
-    print "data: $data\n";
+
     $data =~ s/([^A-Za-z0-9])/sprintf("%%%02X", ord($1))/seg;
     return $data;    
 }
